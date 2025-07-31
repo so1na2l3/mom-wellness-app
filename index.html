@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wellness Check-in</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background decorative elements -->
+    <div class="bg-decoration bg-flower-1">🌻</div>
+    <div class="bg-decoration bg-flower-2">🌷</div>
+    <div class="bg-decoration bg-flower-3">🌼</div>
+    <div class="bg-decoration bg-butterfly-1">🦋</div>
+    <div class="bg-decoration bg-butterfly-2">🦋</div>
+
+    <div class="container">
+        <!-- Main question screen -->
+        <div id="question-screen" class="screen active">
+            <div class="content">
+                <h1 class="main-question">Aap aaj khush ho?</h1>
+                <div class="button-container">
+                    <button id="happy-btn" class="response-btn happy-btn">
+                        <span class="btn-text">Haan</span>
+                        <span class="btn-emoji">😊</span>
+                    </button>
+                    <button id="neutral-btn" class="response-btn neutral-btn">
+                        <span class="btn-text">Thoda sa</span>
+                        <span class="btn-emoji">😐</span>
+                    </button>
+                    <button id="sad-btn" class="response-btn sad-btn">
+                        <span class="btn-text">Nahi</span>
+                        <span class="btn-emoji">😔</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Response screen -->
+        <div id="response-screen" class="screen">
+            <div class="content">
+                <div id="comfort-message" class="comfort-message"></div>
+                <div id="quote-container" class="quote-container">
+                    <div id="quote-text" class="quote-text"></div>
+                </div>
+                <div class="action-buttons">
+                    <button id="new-quote-btn" class="action-btn">
+                        Aur quote sunao
+                    </button>
+                    <button id="restart-btn" class="action-btn secondary">
+                        Phir se puchiye
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
